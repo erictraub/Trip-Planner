@@ -1,0 +1,58 @@
+body {
+  background-color: #f2b632; }
+
+div span {
+  color: white; }
+
+#map-canvas {
+  height: 100vh; }
+
+.form-control {
+  width: 80%;
+  margin-right: 0px; }
+
+#stuff {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  width: 30%; }
+
+#btmstuff {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+  padding: 0;
+  width: 30%; }
+
+.addBtn {
+  margin: auto 0px;
+  font-size: 2em; }
+
+.btn-circle {
+  border-radius: 15px;
+  background-color: #252839;
+  color: white; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #252839;
+  border: none; }
+
+.panels {
+  background-color: #677077;
+  border: none;
+  color: white; }
+
+.panel-heading {
+  margin: 0px; }
+
+.glyphicon-plus-sign {
+  float: right;
+  font-size: 1.6em; }
+
+select {
+  margin-right: 0; }
+
+#btmcontent {
+  margin: 20px; }

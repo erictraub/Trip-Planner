@@ -1,0 +1,92 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="/jquery/dist/jquery.js" defer></script>
+  <script src="/bootstrap/dist/js/bootstrap.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP_zaUqXpZWBPsF79JPUkfrJVrNSRPSgk" defer></script>
+  <script src="/map/mapper.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-map-marker"></span>   Trip Planner</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div id="map-canvas" class="col-md-8"></div>
+
+  <div id="stuff" class="panel panel-default col-md-3 panels">
+    <h3>Hotels</h3>
+      <select class="form-control input-lg">
+        {% for hotel in hotels %}
+        <option>{{ hotel.name }}</option>
+        {% endfor %}
+      </select>
+      <span class="glyphicon glyphicon-plus-sign addBtn"></span>
+    <br>
+    <h3>Restaurant</h3>
+    <select class="form-control input-lg">
+      {% for restaurant in restaurants %}
+      <option>{{ restaurant.name }}</option>
+      {% endfor %}
+    </select>
+    <span class="glyphicon glyphicon-plus-sign addBtn"></span>
+    <br>
+    <h3>Activities</h3>
+    <select class="form-control input-lg">
+      {% for activity in activities %}
+      <option>{{ activity.name }}</option>
+      {% endfor %}
+    </select>
+    <span class="glyphicon glyphicon-plus-sign addBtn"></span>
+  </div>
+  <div id="btmstuff" class="panel panel-default col-md-3 panels">
+    <div class="panel-heading">
+      <h1 class="panel-title"><span class="btn btn-default btn-circle">1</span>
+        <span class="btn btn-default btn-circle">2</span>
+        <span class="btn btn-default btn-circle">3</span>
+        <span class="btn btn-default btn-circle">4</span></h1>
+    </div>
+    <div id="btmcontent">
+      <h3>My Hotel</h3>
+        <ul>
+          <li>testing1</li>
+          <li>testing2</li>
+        </ul>
+      <h3>My Restaurants</h3>
+        <ul>
+          <li>testing3</li>
+        </ul>
+      <h3>My Activities</h3>
+        <ul>
+          <li>testing4</li>
+          <li>testing5</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
